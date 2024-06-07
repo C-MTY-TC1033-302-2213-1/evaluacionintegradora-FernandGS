@@ -57,7 +57,7 @@ Pedido::Pedido(){
                 acum += arrPtrProductos[index]->calculaTotalPagar();
     }
     cout << cantidad << "articulos" << endl;
-    cout << "Total a pagar $" + acum << endl;
+    cout << "Total a pagar $" << acum << endl;
 
     }
 
