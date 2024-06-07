@@ -6,7 +6,7 @@ Producto::Producto(){
     precio = 1029264;
     peso = 18;
 }
-Producto::Producto(string _nombre, int _precio, int _peso){
+Producto::Producto(string _nombre, int _precio, int _peso):Producto( _nombre, _precio, _peso){
     nombre = _nombre;
     precio = _precio;
     peso = _peso;
@@ -33,7 +33,7 @@ int Producto::getPeso(){
 }
 
 string Producto::str(){
-    return nombre + '-' + '$' + to_string(precio) + '-' + '$' +to_string(peso) + '-' + '$' + to_string(calculaTotalPagar());
+    return nombre + '-' + '$' + to_string(precio) + '-' +to_string(peso) + '-' + '$' + to_string(calculaTotalPagar());
 }
 int Producto::calculaTotalPagar(){
     return precio*peso;
