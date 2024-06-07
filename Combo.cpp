@@ -26,7 +26,12 @@ Combo::Combo():Producto() {
         int descuento;
         total = 0;
         valorc = precio*peso*clave;
-        descuento = (valorc/100)*25;
+        if (clave == 1){
+            descuento = (valorc/100)*25;
+        }
+        else if (clave == 2){
+            descuento = (valorc/100)*30;
+        }
         total = valorc - descuento;
         return total;
     }
