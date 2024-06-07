@@ -49,13 +49,16 @@ Pedido::Pedido(){
 
 
     void Pedido::ticketCliente(){
-        int cont;
-        cont = 0;
+        int acum;
+        acum = 0;
 
         for (int index = 0; index <  cantidad; index++){
             cout << arrPtrProductos[index] ->str() << endl;
-                cont++; 
+                acum += arrPtrProductos[index]->calculaTotalPagar();
     }
+    cout << cantidad << "articulos" << endl;
+    cout << "Total a pagar $" + acum << endl;
+
     }
 
     

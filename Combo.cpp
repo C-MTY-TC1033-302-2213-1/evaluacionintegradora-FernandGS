@@ -22,18 +22,12 @@ Combo::Combo():Producto() {
 
     int Combo::calculaTotalPagar(){
         int total;
-        float valorc; 
+        int valorc; 
+        int descuento;
         total = 0;
-        valorc = (precio*peso)%100;
-        if (clave == 1){
-            for (int index = 0; index == valorc; index++)
-            total = valorc - 25; 
-        }
-
-        if (clave == 2){
-            for (int index = 0; index == valorc; index++)
-            total = valorc - 30; 
-        }
+        valorc = precio*peso*clave;
+        descuento = (valorc/100)*25;
+        total = valorc - descuento;
         return total;
     }
 

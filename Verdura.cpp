@@ -17,7 +17,7 @@ Verdura::Verdura():Producto() {
     }
 
     string Verdura::str(){
-        return nombre + '-' + '$' + to_string(precio) + '-' +to_string(peso) + '-' + '$' + to_string(calculaTotalPagar()) + '-' + '$' + temporada;
+        return nombre + '-' + '$' + to_string(precio) + '-' +to_string(peso) + '-' + '$' + to_string(calculaTotalPagar()) + '-' + temporada;
     }
 
     int Verdura::calculaTotalPagar(){
