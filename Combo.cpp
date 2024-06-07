@@ -17,7 +17,7 @@ Combo::Combo():Producto() {
     }
 
     string Combo::str(){
-        return nombre + '-' + '$' + to_string(precio) + '-' + to_string(peso) + '-' + '$' + to_string(calculaTotalPagar()) + '-' + '$' + to_string(clave);
+        return nombre + '-' + '$' + to_string(precio) + '-' + to_string(peso) + '-' + '$' + to_string(calculaTotalPagar()) + '-' + to_string(clave);
     }
 
     int Combo::calculaTotalPagar(){
