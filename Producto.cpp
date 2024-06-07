@@ -6,7 +6,7 @@ Producto::Producto(){
     precio = 1029264;
     peso = 18;
 }
-Producto::Producto(string _nombre, int _precio, int _peso):Producto( _nombre, _precio, _peso){
+Producto::Producto(string _nombre, int _precio, int _peso){
     nombre = _nombre;
     precio = _precio;
     peso = _peso;
